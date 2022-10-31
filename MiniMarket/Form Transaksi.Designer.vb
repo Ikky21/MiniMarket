@@ -23,12 +23,12 @@ Partial Class Form_Transaksi
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Tbtgl = New System.Windows.Forms.DateTimePicker()
+        Me.Tbtrbayar = New System.Windows.Forms.TextBox()
+        Me.Tbtotalbayar = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Tbidpembayaran = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.TbNamaPembeli = New System.Windows.Forms.TextBox()
@@ -45,64 +45,78 @@ Partial Class Form_Transaksi
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TbIdTransaksi = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Tbtgltransaksi = New System.Windows.Forms.DateTimePicker()
+        Me.Tbtrpembeli = New System.Windows.Forms.TextBox()
+        Me.Tbtrbarang = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TbKeterangan = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnTambah = New System.Windows.Forms.Button()
+        Me.btnSimpan = New System.Windows.Forms.Button()
+        Me.btnTotal = New System.Windows.Forms.Button()
+        Me.btnKeluar = New System.Windows.Forms.Button()
+        Me.btnCetak = New System.Windows.Forms.Button()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.TbBarang = New System.Windows.Forms.TextBox()
+        Me.TbNamabarang = New System.Windows.Forms.TextBox()
+        Me.txtHargaBarang = New System.Windows.Forms.TextBox()
+        Me.TbJumlahBarang = New System.Windows.Forms.TextBox()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.DateTimePicker2)
-        Me.GroupBox3.Controls.Add(Me.TextBox4)
-        Me.GroupBox3.Controls.Add(Me.TextBox5)
+        Me.GroupBox3.Controls.Add(Me.Tbtgl)
+        Me.GroupBox3.Controls.Add(Me.Tbtrbayar)
+        Me.GroupBox3.Controls.Add(Me.Tbtotalbayar)
         Me.GroupBox3.Controls.Add(Me.Label13)
         Me.GroupBox3.Controls.Add(Me.Label14)
-        Me.GroupBox3.Controls.Add(Me.TextBox1)
+        Me.GroupBox3.Controls.Add(Me.Tbidpembayaran)
         Me.GroupBox3.Controls.Add(Me.Label12)
         Me.GroupBox3.Controls.Add(Me.Label11)
-        Me.GroupBox3.Location = New System.Drawing.Point(22, 244)
+        Me.GroupBox3.Location = New System.Drawing.Point(22, 225)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(634, 97)
+        Me.GroupBox3.Size = New System.Drawing.Size(252, 171)
         Me.GroupBox3.TabIndex = 21
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Pembayaran"
         '
-        'DateTimePicker2
+        'Tbtgl
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(128, 58)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker2.TabIndex = 22
+        Me.Tbtgl.Location = New System.Drawing.Point(120, 58)
+        Me.Tbtgl.Name = "Tbtgl"
+        Me.Tbtgl.Size = New System.Drawing.Size(124, 20)
+        Me.Tbtgl.TabIndex = 22
         '
-        'TextBox4
+        'Tbtrbayar
         '
-        Me.TextBox4.Location = New System.Drawing.Point(501, 58)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 18
+        Me.Tbtrbayar.Location = New System.Drawing.Point(120, 132)
+        Me.Tbtrbayar.Name = "Tbtrbayar"
+        Me.Tbtrbayar.Size = New System.Drawing.Size(100, 20)
+        Me.Tbtrbayar.TabIndex = 18
         '
-        'TextBox5
+        'Tbtotalbayar
         '
-        Me.TextBox5.Location = New System.Drawing.Point(501, 22)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 17
+        Me.Tbtotalbayar.Location = New System.Drawing.Point(120, 96)
+        Me.Tbtotalbayar.Name = "Tbtotalbayar"
+        Me.Tbtotalbayar.Size = New System.Drawing.Size(100, 20)
+        Me.Tbtotalbayar.TabIndex = 17
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(402, 65)
+        Me.Label13.Location = New System.Drawing.Point(21, 139)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(65, 13)
         Me.Label13.TabIndex = 16
@@ -111,23 +125,23 @@ Partial Class Form_Transaksi
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(402, 29)
+        Me.Label14.Location = New System.Drawing.Point(21, 103)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(61, 13)
         Me.Label14.TabIndex = 15
         Me.Label14.Text = "Total Bayar"
         '
-        'TextBox1
+        'Tbidpembayaran
         '
-        Me.TextBox1.Location = New System.Drawing.Point(128, 22)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 13
+        Me.Tbidpembayaran.Location = New System.Drawing.Point(120, 22)
+        Me.Tbidpembayaran.Name = "Tbidpembayaran"
+        Me.Tbidpembayaran.Size = New System.Drawing.Size(100, 20)
+        Me.Tbidpembayaran.TabIndex = 13
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(29, 65)
+        Me.Label12.Location = New System.Drawing.Point(21, 65)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(76, 13)
         Me.Label12.TabIndex = 12
@@ -136,7 +150,7 @@ Partial Class Form_Transaksi
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(29, 29)
+        Me.Label11.Location = New System.Drawing.Point(21, 29)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(78, 13)
         Me.Label11.TabIndex = 11
@@ -246,9 +260,9 @@ Partial Class Form_Transaksi
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(22, 393)
+        Me.DataGridView1.Location = New System.Drawing.Point(690, 23)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(634, 130)
+        Me.DataGridView1.Size = New System.Drawing.Size(386, 393)
         Me.DataGridView1.TabIndex = 22
         '
         'TbIdTransaksi
@@ -260,9 +274,9 @@ Partial Class Form_Transaksi
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox2.Controls.Add(Me.TextBox9)
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
+        Me.GroupBox2.Controls.Add(Me.Tbtgltransaksi)
+        Me.GroupBox2.Controls.Add(Me.Tbtrpembeli)
+        Me.GroupBox2.Controls.Add(Me.Tbtrbarang)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label9)
@@ -277,26 +291,26 @@ Partial Class Form_Transaksi
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Transaksi"
         '
-        'DateTimePicker1
+        'Tbtgltransaksi
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(124, 124)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 41
+        Me.Tbtgltransaksi.Location = New System.Drawing.Point(124, 124)
+        Me.Tbtgltransaksi.Name = "Tbtgltransaksi"
+        Me.Tbtgltransaksi.Size = New System.Drawing.Size(200, 20)
+        Me.Tbtgltransaksi.TabIndex = 41
         '
-        'TextBox9
+        'Tbtrpembeli
         '
-        Me.TextBox9.Location = New System.Drawing.Point(124, 48)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox9.TabIndex = 40
+        Me.Tbtrpembeli.Location = New System.Drawing.Point(124, 48)
+        Me.Tbtrpembeli.Name = "Tbtrpembeli"
+        Me.Tbtrpembeli.Size = New System.Drawing.Size(100, 20)
+        Me.Tbtrpembeli.TabIndex = 40
         '
-        'TextBox3
+        'Tbtrbarang
         '
-        Me.TextBox3.Location = New System.Drawing.Point(124, 84)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 38
+        Me.Tbtrbarang.Location = New System.Drawing.Point(124, 84)
+        Me.Tbtrbarang.Name = "Tbtrbarang"
+        Me.Tbtrbarang.Size = New System.Drawing.Size(100, 20)
+        Me.Tbtrbarang.TabIndex = 38
         '
         'Label10
         '
@@ -351,27 +365,149 @@ Partial Class Form_Transaksi
         Me.Label7.TabIndex = 34
         Me.Label7.Text = "Id Barang"
         '
-        'Button1
+        'btnTambah
         '
-        Me.Button1.Location = New System.Drawing.Point(22, 362)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 24
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnTambah.Location = New System.Drawing.Point(22, 440)
+        Me.btnTambah.Name = "btnTambah"
+        Me.btnTambah.Size = New System.Drawing.Size(75, 23)
+        Me.btnTambah.TabIndex = 24
+        Me.btnTambah.Text = "TAMBAH"
+        Me.btnTambah.UseVisualStyleBackColor = True
+        '
+        'btnSimpan
+        '
+        Me.btnSimpan.Location = New System.Drawing.Point(112, 440)
+        Me.btnSimpan.Name = "btnSimpan"
+        Me.btnSimpan.Size = New System.Drawing.Size(75, 23)
+        Me.btnSimpan.TabIndex = 25
+        Me.btnSimpan.Text = "SIMPAN"
+        Me.btnSimpan.UseVisualStyleBackColor = True
+        '
+        'btnTotal
+        '
+        Me.btnTotal.Location = New System.Drawing.Point(581, 371)
+        Me.btnTotal.Name = "btnTotal"
+        Me.btnTotal.Size = New System.Drawing.Size(75, 23)
+        Me.btnTotal.TabIndex = 26
+        Me.btnTotal.Text = "TOTAL"
+        Me.btnTotal.UseVisualStyleBackColor = True
+        '
+        'btnKeluar
+        '
+        Me.btnKeluar.Location = New System.Drawing.Point(1066, -3)
+        Me.btnKeluar.Name = "btnKeluar"
+        Me.btnKeluar.Size = New System.Drawing.Size(24, 20)
+        Me.btnKeluar.TabIndex = 28
+        Me.btnKeluar.Text = "X"
+        Me.btnKeluar.UseVisualStyleBackColor = True
+        '
+        'btnCetak
+        '
+        Me.btnCetak.Location = New System.Drawing.Point(581, 440)
+        Me.btnCetak.Name = "btnCetak"
+        Me.btnCetak.Size = New System.Drawing.Size(75, 23)
+        Me.btnCetak.TabIndex = 27
+        Me.btnCetak.Text = "CETAK"
+        Me.btnCetak.UseVisualStyleBackColor = True
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(321, 273)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(53, 13)
+        Me.Label15.TabIndex = 29
+        Me.Label15.Text = "Id Barang"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(321, 308)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(72, 13)
+        Me.Label16.TabIndex = 30
+        Me.Label16.Text = "Nama Barang"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(321, 340)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(36, 13)
+        Me.Label17.TabIndex = 31
+        Me.Label17.Text = "Harga"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(321, 376)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(40, 13)
+        Me.Label18.TabIndex = 32
+        Me.Label18.Text = "Jumlah"
+        '
+        'TbBarang
+        '
+        Me.TbBarang.Location = New System.Drawing.Point(431, 265)
+        Me.TbBarang.Name = "TbBarang"
+        Me.TbBarang.Size = New System.Drawing.Size(100, 20)
+        Me.TbBarang.TabIndex = 33
+        '
+        'TbNamabarang
+        '
+        Me.TbNamabarang.Location = New System.Drawing.Point(431, 301)
+        Me.TbNamabarang.Name = "TbNamabarang"
+        Me.TbNamabarang.Size = New System.Drawing.Size(100, 20)
+        Me.TbNamabarang.TabIndex = 34
+        '
+        'txtHargaBarang
+        '
+        Me.txtHargaBarang.Location = New System.Drawing.Point(431, 333)
+        Me.txtHargaBarang.Name = "txtHargaBarang"
+        Me.txtHargaBarang.Size = New System.Drawing.Size(100, 20)
+        Me.txtHargaBarang.TabIndex = 35
+        '
+        'TbJumlahBarang
+        '
+        Me.TbJumlahBarang.Location = New System.Drawing.Point(431, 369)
+        Me.TbJumlahBarang.Name = "TbJumlahBarang"
+        Me.TbJumlahBarang.Size = New System.Drawing.Size(100, 20)
+        Me.TbJumlahBarang.TabIndex = 36
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(22, 469)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.Size = New System.Drawing.Size(1054, 160)
+        Me.DataGridView2.TabIndex = 37
         '
         'Form_Transaksi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 536)
+        Me.ClientSize = New System.Drawing.Size(1088, 641)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.DataGridView2)
+        Me.Controls.Add(Me.TbJumlahBarang)
+        Me.Controls.Add(Me.txtHargaBarang)
+        Me.Controls.Add(Me.TbNamabarang)
+        Me.Controls.Add(Me.TbBarang)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.btnKeluar)
+        Me.Controls.Add(Me.btnCetak)
+        Me.Controls.Add(Me.btnTotal)
+        Me.Controls.Add(Me.btnSimpan)
+        Me.Controls.Add(Me.btnTambah)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Name = "Form_Transaksi"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
@@ -379,17 +515,19 @@ Partial Class Form_Transaksi
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents DateTimePicker2 As DateTimePicker
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Tbtgl As DateTimePicker
+    Friend WithEvents Tbtrbayar As TextBox
+    Friend WithEvents Tbtotalbayar As TextBox
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Tbidpembayaran As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents TbNamaPembeli As TextBox
@@ -406,14 +544,27 @@ Partial Class Form_Transaksi
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents TbIdTransaksi As TextBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Tbtgltransaksi As DateTimePicker
+    Friend WithEvents Tbtrpembeli As TextBox
+    Friend WithEvents Tbtrbarang As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents TbKeterangan As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnTambah As Button
+    Friend WithEvents btnSimpan As Button
+    Friend WithEvents btnTotal As Button
+    Friend WithEvents btnKeluar As Button
+    Friend WithEvents btnCetak As Button
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents TbBarang As TextBox
+    Friend WithEvents TbNamabarang As TextBox
+    Friend WithEvents txtHargaBarang As TextBox
+    Friend WithEvents TbJumlahBarang As TextBox
+    Friend WithEvents DataGridView2 As DataGridView
 End Class

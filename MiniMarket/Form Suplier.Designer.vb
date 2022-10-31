@@ -30,12 +30,13 @@ Partial Class Form_Suplier
         Me.txtnamasuplier = New System.Windows.Forms.TextBox()
         Me.txtnohp = New System.Windows.Forms.TextBox()
         Me.txtalamat = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DgSuplier = New System.Windows.Forms.DataGridView()
         Me.btntambah = New System.Windows.Forms.Button()
-        Me.btnsimpan = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.BtnLanjut = New System.Windows.Forms.Button()
         Me.btnkeluar = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BtnHapus = New System.Windows.Forms.Button()
+        CType(Me.DgSuplier, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -102,13 +103,13 @@ Partial Class Form_Suplier
         Me.txtalamat.Size = New System.Drawing.Size(100, 20)
         Me.txtalamat.TabIndex = 7
         '
-        'DataGridView1
+        'DgSuplier
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(317, 13)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(471, 197)
-        Me.DataGridView1.TabIndex = 8
+        Me.DgSuplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgSuplier.Location = New System.Drawing.Point(317, 13)
+        Me.DgSuplier.Name = "DgSuplier"
+        Me.DgSuplier.Size = New System.Drawing.Size(471, 197)
+        Me.DgSuplier.TabIndex = 8
         '
         'btntambah
         '
@@ -116,26 +117,26 @@ Partial Class Form_Suplier
         Me.btntambah.Name = "btntambah"
         Me.btntambah.Size = New System.Drawing.Size(75, 23)
         Me.btntambah.TabIndex = 9
-        Me.btntambah.Text = "TAMBAH"
+        Me.btntambah.Text = "Tambah"
         Me.btntambah.UseVisualStyleBackColor = True
         '
-        'btnsimpan
+        'btnUpdate
         '
-        Me.btnsimpan.Location = New System.Drawing.Point(127, 187)
-        Me.btnsimpan.Name = "btnsimpan"
-        Me.btnsimpan.Size = New System.Drawing.Size(75, 23)
-        Me.btnsimpan.TabIndex = 10
-        Me.btnsimpan.Text = "SIMPAN"
-        Me.btnsimpan.UseVisualStyleBackColor = True
+        Me.btnUpdate.Location = New System.Drawing.Point(127, 187)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
+        Me.btnUpdate.TabIndex = 10
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.UseVisualStyleBackColor = True
         '
-        'Button1
+        'BtnLanjut
         '
-        Me.Button1.Location = New System.Drawing.Point(225, 187)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "NEXT"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnLanjut.Location = New System.Drawing.Point(794, 34)
+        Me.BtnLanjut.Name = "BtnLanjut"
+        Me.BtnLanjut.Size = New System.Drawing.Size(45, 23)
+        Me.BtnLanjut.TabIndex = 11
+        Me.BtnLanjut.Text = "NEXT"
+        Me.BtnLanjut.UseVisualStyleBackColor = True
         '
         'btnkeluar
         '
@@ -146,17 +147,27 @@ Partial Class Form_Suplier
         Me.btnkeluar.Text = "X"
         Me.btnkeluar.UseVisualStyleBackColor = True
         '
+        'BtnHapus
+        '
+        Me.BtnHapus.Location = New System.Drawing.Point(229, 187)
+        Me.BtnHapus.Name = "BtnHapus"
+        Me.BtnHapus.Size = New System.Drawing.Size(75, 23)
+        Me.BtnHapus.TabIndex = 13
+        Me.BtnHapus.Text = "Hapus"
+        Me.BtnHapus.UseVisualStyleBackColor = True
+        '
         'Form_Suplier
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(836, 228)
         Me.ControlBox = False
+        Me.Controls.Add(Me.BtnHapus)
         Me.Controls.Add(Me.btnkeluar)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.btnsimpan)
+        Me.Controls.Add(Me.BtnLanjut)
+        Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btntambah)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DgSuplier)
         Me.Controls.Add(Me.txtalamat)
         Me.Controls.Add(Me.txtnohp)
         Me.Controls.Add(Me.txtnamasuplier)
@@ -167,7 +178,7 @@ Partial Class Form_Suplier
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form_Suplier"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgSuplier, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -181,9 +192,10 @@ Partial Class Form_Suplier
     Friend WithEvents txtnamasuplier As TextBox
     Friend WithEvents txtnohp As TextBox
     Friend WithEvents txtalamat As TextBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DgSuplier As DataGridView
     Friend WithEvents btntambah As Button
-    Friend WithEvents btnsimpan As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnUpdate As Button
+    Friend WithEvents BtnLanjut As Button
     Friend WithEvents btnkeluar As Button
+    Friend WithEvents BtnHapus As Button
 End Class

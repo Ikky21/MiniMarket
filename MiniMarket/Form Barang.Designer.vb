@@ -23,9 +23,9 @@ Partial Class Form_Barang
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.BtnKeluar = New System.Windows.Forms.Button()
-        Me.BtnSimpan = New System.Windows.Forms.Button()
+        Me.BtnUpdate = New System.Windows.Forms.Button()
         Me.BtnTambah = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DgBarang = New System.Windows.Forms.DataGridView()
         Me.txtIdSuplier = New System.Windows.Forms.TextBox()
         Me.txtStok = New System.Windows.Forms.TextBox()
         Me.txtHarga = New System.Windows.Forms.TextBox()
@@ -36,7 +36,8 @@ Partial Class Form_Barang
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnHapus = New System.Windows.Forms.Button()
+        CType(Me.DgBarang, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnKeluar
@@ -48,31 +49,31 @@ Partial Class Form_Barang
         Me.BtnKeluar.Text = "X"
         Me.BtnKeluar.UseVisualStyleBackColor = True
         '
-        'BtnSimpan
+        'BtnUpdate
         '
-        Me.BtnSimpan.Location = New System.Drawing.Point(156, 232)
-        Me.BtnSimpan.Name = "BtnSimpan"
-        Me.BtnSimpan.Size = New System.Drawing.Size(75, 23)
-        Me.BtnSimpan.TabIndex = 26
-        Me.BtnSimpan.Text = "Simpan"
-        Me.BtnSimpan.UseVisualStyleBackColor = True
+        Me.BtnUpdate.Location = New System.Drawing.Point(118, 232)
+        Me.BtnUpdate.Name = "BtnUpdate"
+        Me.BtnUpdate.Size = New System.Drawing.Size(64, 23)
+        Me.BtnUpdate.TabIndex = 26
+        Me.BtnUpdate.Text = "Update"
+        Me.BtnUpdate.UseVisualStyleBackColor = True
         '
         'BtnTambah
         '
         Me.BtnTambah.Location = New System.Drawing.Point(26, 232)
         Me.BtnTambah.Name = "BtnTambah"
-        Me.BtnTambah.Size = New System.Drawing.Size(75, 23)
+        Me.BtnTambah.Size = New System.Drawing.Size(69, 23)
         Me.BtnTambah.TabIndex = 25
-        Me.BtnTambah.Text = "TAMBAH"
+        Me.BtnTambah.Text = "Tambah"
         Me.BtnTambah.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'DgBarang
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(289, 12)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(405, 243)
-        Me.DataGridView1.TabIndex = 24
+        Me.DgBarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DgBarang.Location = New System.Drawing.Point(289, 12)
+        Me.DgBarang.Name = "DgBarang"
+        Me.DgBarang.Size = New System.Drawing.Size(405, 243)
+        Me.DgBarang.TabIndex = 24
         '
         'txtIdSuplier
         '
@@ -154,16 +155,26 @@ Partial Class Form_Barang
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "No Barang"
         '
+        'btnHapus
+        '
+        Me.btnHapus.Location = New System.Drawing.Point(214, 232)
+        Me.btnHapus.Name = "btnHapus"
+        Me.btnHapus.Size = New System.Drawing.Size(54, 23)
+        Me.btnHapus.TabIndex = 28
+        Me.btnHapus.Text = "Hapus"
+        Me.btnHapus.UseVisualStyleBackColor = True
+        '
         'Form_Barang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(761, 278)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btnHapus)
         Me.Controls.Add(Me.BtnKeluar)
-        Me.Controls.Add(Me.BtnSimpan)
+        Me.Controls.Add(Me.BtnUpdate)
         Me.Controls.Add(Me.BtnTambah)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DgBarang)
         Me.Controls.Add(Me.txtIdSuplier)
         Me.Controls.Add(Me.txtStok)
         Me.Controls.Add(Me.txtHarga)
@@ -176,16 +187,16 @@ Partial Class Form_Barang
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form_Barang"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DgBarang, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents BtnKeluar As Button
-    Friend WithEvents BtnSimpan As Button
+    Friend WithEvents BtnUpdate As Button
     Friend WithEvents BtnTambah As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DgBarang As DataGridView
     Friend WithEvents txtIdSuplier As TextBox
     Friend WithEvents txtStok As TextBox
     Friend WithEvents txtHarga As TextBox
@@ -196,4 +207,5 @@ Partial Class Form_Barang
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnHapus As Button
 End Class
