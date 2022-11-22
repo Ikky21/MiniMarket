@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9778D28D-71F3-4054-BF9E-2A05D47E9328}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>MiniMarket.My.MyApplication</StartupObject>
+    <StartupObject>MiniMarket.SplashScreen</StartupObject>
     <RootNamespace>MiniMarket</RootNamespace>
     <AssemblyName>MiniMarket</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -48,6 +48,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -79,10 +80,22 @@
     <Compile Include="Form Barang.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form Suplier.Designer.vb">
-      <DependentUpon>Form Suplier.vb</DependentUpon>
+    <Compile Include="Form Login.Designer.vb">
+      <DependentUpon>Form Login.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form Suplier.vb">
+    <Compile Include="Form Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Pembeli.Designer.vb">
+      <DependentUpon>Form Pembeli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Pembeli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Petugas.Designer.vb">
+      <DependentUpon>Form Petugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Petugas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form Transaksi.Designer.vb">
@@ -97,6 +110,7 @@
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ModulKoneksi.vb" />
     <Compile Include="Splash Screen.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +122,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -124,8 +139,14 @@
     <EmbeddedResource Include="Form Barang.resx">
       <DependentUpon>Form Barang.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form Suplier.resx">
-      <DependentUpon>Form Suplier.vb</DependentUpon>
+    <EmbeddedResource Include="Form Login.resx">
+      <DependentUpon>Form Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Pembeli.resx">
+      <DependentUpon>Form Pembeli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Petugas.resx">
+      <DependentUpon>Form Petugas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form Transaksi.resx">
       <DependentUpon>Form Transaksi.vb</DependentUpon>

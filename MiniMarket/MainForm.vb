@@ -1,17 +1,39 @@
 ﻿Public Class MainForm
-    Private Sub TransaksiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TransaksiToolStripMenuItem.Click
-        Form_Transaksi.Show()
+    Sub Terkunci()
+        Login.Enabled = True
+        LogOut.Enabled = False
+        Master.Enabled = False
+        Transaksi.Enabled = False
+    End Sub
+    Private Sub TransaksiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Transaksi.Click
+        Form_Transaksi.ShowDialog()
     End Sub
 
-    Private Sub KeluarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KeluarToolStripMenuItem.Click
+    Private Sub BarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Barang.Click
+        Form_Barang.ShowDialog()
+    End Sub
+
+    Private Sub PembeliToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Pembeli.Click
+        Form_Pembeli.ShowDialog()
+    End Sub
+
+    Private Sub PetugasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Petugas.Click
+        Form_Petugas.ShowDialog()
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitTS.Click
         End
     End Sub
 
-    Private Sub BarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BarangToolStripMenuItem.Click
-        Form_Barang.Show()
+    Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Call Terkunci()
     End Sub
 
-    Private Sub SuplierToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SuplierToolStripMenuItem.Click
-        Form_Suplier.Show()
+    Private Sub Login_Click(sender As Object, e As EventArgs) Handles Login.Click
+        Form_Login.ShowDialog()
+    End Sub
+
+    Private Sub LogOut_Click(sender As Object, e As EventArgs) Handles LogOut.Click
+        Call Terkunci()
     End Sub
 End Class

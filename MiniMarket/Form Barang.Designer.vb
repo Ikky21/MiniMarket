@@ -26,12 +26,10 @@ Partial Class Form_Barang
         Me.BtnUpdate = New System.Windows.Forms.Button()
         Me.BtnTambah = New System.Windows.Forms.Button()
         Me.DgBarang = New System.Windows.Forms.DataGridView()
-        Me.txtIdSuplier = New System.Windows.Forms.TextBox()
         Me.txtStok = New System.Windows.Forms.TextBox()
         Me.txtHarga = New System.Windows.Forms.TextBox()
         Me.txtNamaBarang = New System.Windows.Forms.TextBox()
         Me.txtNoBarang = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -69,60 +67,47 @@ Partial Class Form_Barang
         '
         'DgBarang
         '
+        Me.DgBarang.AllowUserToAddRows = False
+        Me.DgBarang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DgBarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DgBarang.Location = New System.Drawing.Point(289, 12)
         Me.DgBarang.Name = "DgBarang"
+        Me.DgBarang.RowHeadersVisible = False
         Me.DgBarang.Size = New System.Drawing.Size(405, 243)
         Me.DgBarang.TabIndex = 24
         '
-        'txtIdSuplier
-        '
-        Me.txtIdSuplier.Location = New System.Drawing.Point(131, 185)
-        Me.txtIdSuplier.Name = "txtIdSuplier"
-        Me.txtIdSuplier.Size = New System.Drawing.Size(100, 20)
-        Me.txtIdSuplier.TabIndex = 23
-        '
         'txtStok
         '
-        Me.txtStok.Location = New System.Drawing.Point(131, 143)
+        Me.txtStok.Location = New System.Drawing.Point(131, 172)
         Me.txtStok.Name = "txtStok"
         Me.txtStok.Size = New System.Drawing.Size(100, 20)
         Me.txtStok.TabIndex = 22
         '
         'txtHarga
         '
-        Me.txtHarga.Location = New System.Drawing.Point(131, 93)
+        Me.txtHarga.Location = New System.Drawing.Point(131, 122)
         Me.txtHarga.Name = "txtHarga"
         Me.txtHarga.Size = New System.Drawing.Size(100, 20)
         Me.txtHarga.TabIndex = 21
         '
         'txtNamaBarang
         '
-        Me.txtNamaBarang.Location = New System.Drawing.Point(131, 52)
+        Me.txtNamaBarang.Location = New System.Drawing.Point(131, 81)
         Me.txtNamaBarang.Name = "txtNamaBarang"
         Me.txtNamaBarang.Size = New System.Drawing.Size(100, 20)
         Me.txtNamaBarang.TabIndex = 20
         '
         'txtNoBarang
         '
-        Me.txtNoBarang.Location = New System.Drawing.Point(131, 12)
+        Me.txtNoBarang.Location = New System.Drawing.Point(131, 41)
         Me.txtNoBarang.Name = "txtNoBarang"
         Me.txtNoBarang.Size = New System.Drawing.Size(100, 20)
         Me.txtNoBarang.TabIndex = 19
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(23, 192)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(51, 13)
-        Me.Label5.TabIndex = 18
-        Me.Label5.Text = "Id Suplier"
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(23, 143)
+        Me.Label4.Location = New System.Drawing.Point(23, 172)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(29, 13)
         Me.Label4.TabIndex = 17
@@ -131,7 +116,7 @@ Partial Class Form_Barang
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(23, 100)
+        Me.Label3.Location = New System.Drawing.Point(23, 129)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(36, 13)
         Me.Label3.TabIndex = 16
@@ -140,7 +125,7 @@ Partial Class Form_Barang
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(23, 59)
+        Me.Label2.Location = New System.Drawing.Point(23, 88)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(72, 13)
         Me.Label2.TabIndex = 15
@@ -149,7 +134,7 @@ Partial Class Form_Barang
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(23, 19)
+        Me.Label1.Location = New System.Drawing.Point(23, 48)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(58, 13)
         Me.Label1.TabIndex = 14
@@ -175,12 +160,10 @@ Partial Class Form_Barang
         Me.Controls.Add(Me.BtnUpdate)
         Me.Controls.Add(Me.BtnTambah)
         Me.Controls.Add(Me.DgBarang)
-        Me.Controls.Add(Me.txtIdSuplier)
         Me.Controls.Add(Me.txtStok)
         Me.Controls.Add(Me.txtHarga)
         Me.Controls.Add(Me.txtNamaBarang)
         Me.Controls.Add(Me.txtNoBarang)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -197,12 +180,10 @@ Partial Class Form_Barang
     Friend WithEvents BtnUpdate As Button
     Friend WithEvents BtnTambah As Button
     Friend WithEvents DgBarang As DataGridView
-    Friend WithEvents txtIdSuplier As TextBox
     Friend WithEvents txtStok As TextBox
     Friend WithEvents txtHarga As TextBox
     Friend WithEvents txtNamaBarang As TextBox
     Friend WithEvents txtNoBarang As TextBox
-    Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label

@@ -75,7 +75,6 @@ Partial Class SplashScreen
         'Timer1
         '
         Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 10
         '
         'Label4
         '
@@ -83,7 +82,7 @@ Partial Class SplashScreen
         Me.Label4.Font = New System.Drawing.Font("Aller", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(486, 8)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(84, 16)
+        Me.Label4.Size = New System.Drawing.Size(83, 16)
         Me.Label4.TabIndex = 15
         Me.Label4.Text = "Version 7.0.2"
         '
@@ -103,7 +102,7 @@ Partial Class SplashScreen
         Me.Label2.Font = New System.Drawing.Font("Aller", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(7, 212)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(35, 16)
+        Me.Label2.Size = New System.Drawing.Size(34, 16)
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Load"
         '

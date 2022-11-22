@@ -23,53 +23,94 @@ Partial Class MainForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.MasterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TransaksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.KeluarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SuplierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Login = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.LogOut = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ExitTS = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Master = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Barang = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Pembeli = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Petugas = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Transaksi = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MasterToolStripMenuItem, Me.TransaksiToolStripMenuItem, Me.KeluarToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.Master, Me.Transaksi})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(753, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'MasterToolStripMenuItem
+        'FileToolStripMenuItem
         '
-        Me.MasterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BarangToolStripMenuItem, Me.SuplierToolStripMenuItem})
-        Me.MasterToolStripMenuItem.Name = "MasterToolStripMenuItem"
-        Me.MasterToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
-        Me.MasterToolStripMenuItem.Text = "Master"
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Login, Me.ToolStripMenuItem1, Me.LogOut, Me.ToolStripMenuItem2, Me.ExitTS})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
         '
-        'TransaksiToolStripMenuItem
+        'Login
         '
-        Me.TransaksiToolStripMenuItem.Name = "TransaksiToolStripMenuItem"
-        Me.TransaksiToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
-        Me.TransaksiToolStripMenuItem.Text = "Transaksi"
+        Me.Login.Name = "Login"
+        Me.Login.Size = New System.Drawing.Size(180, 22)
+        Me.Login.Text = "Login"
         '
-        'KeluarToolStripMenuItem
+        'ToolStripMenuItem1
         '
-        Me.KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
-        Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
-        Me.KeluarToolStripMenuItem.Text = "Keluar"
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(177, 6)
         '
-        'BarangToolStripMenuItem
+        'LogOut
         '
-        Me.BarangToolStripMenuItem.Name = "BarangToolStripMenuItem"
-        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.BarangToolStripMenuItem.Text = "Barang"
+        Me.LogOut.Name = "LogOut"
+        Me.LogOut.Size = New System.Drawing.Size(180, 22)
+        Me.LogOut.Text = "LogOut"
         '
-        'SuplierToolStripMenuItem
+        'ToolStripMenuItem2
         '
-        Me.SuplierToolStripMenuItem.Name = "SuplierToolStripMenuItem"
-        Me.SuplierToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.SuplierToolStripMenuItem.Text = "Suplier"
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(177, 6)
+        '
+        'ExitTS
+        '
+        Me.ExitTS.Name = "ExitTS"
+        Me.ExitTS.Size = New System.Drawing.Size(180, 22)
+        Me.ExitTS.Text = "Exit"
+        '
+        'Master
+        '
+        Me.Master.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Barang, Me.Pembeli, Me.Petugas})
+        Me.Master.Name = "Master"
+        Me.Master.Size = New System.Drawing.Size(55, 20)
+        Me.Master.Text = "Master"
+        '
+        'Barang
+        '
+        Me.Barang.Name = "Barang"
+        Me.Barang.Size = New System.Drawing.Size(117, 22)
+        Me.Barang.Text = "Barang"
+        '
+        'Pembeli
+        '
+        Me.Pembeli.Name = "Pembeli"
+        Me.Pembeli.Size = New System.Drawing.Size(117, 22)
+        Me.Pembeli.Text = "Pembeli"
+        '
+        'Petugas
+        '
+        Me.Petugas.Name = "Petugas"
+        Me.Petugas.Size = New System.Drawing.Size(117, 22)
+        Me.Petugas.Text = "petugas"
+        '
+        'Transaksi
+        '
+        Me.Transaksi.Name = "Transaksi"
+        Me.Transaksi.Size = New System.Drawing.Size(66, 20)
+        Me.Transaksi.Text = "Transaksi"
         '
         'MainForm
         '
@@ -89,9 +130,15 @@ Partial Class MainForm
     End Sub
 
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents MasterToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents BarangToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SuplierToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TransaksiToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents KeluarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Master As ToolStripMenuItem
+    Friend WithEvents Barang As ToolStripMenuItem
+    Friend WithEvents Transaksi As ToolStripMenuItem
+    Friend WithEvents Pembeli As ToolStripMenuItem
+    Friend WithEvents Petugas As ToolStripMenuItem
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Login As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem1 As ToolStripSeparator
+    Friend WithEvents LogOut As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As ToolStripSeparator
+    Friend WithEvents ExitTS As ToolStripMenuItem
 End Class
