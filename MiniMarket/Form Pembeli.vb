@@ -57,7 +57,7 @@ Public Class Form_Pembeli
     End Sub
 
     Private Sub Form_Pembeli_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call Tampil()
+        Call Tampil() 'KOMRNYST
     End Sub
 
     Private Sub btntambah_Click(sender As Object, e As EventArgs) Handles btntambah.Click
